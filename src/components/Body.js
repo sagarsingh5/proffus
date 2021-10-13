@@ -1,5 +1,8 @@
+// import {doc, getDoc} from '@react-native-firebase/firestore';
+
 import * as React from 'react';
 import {Text, View, StyleSheet, ScrollView, LogBox, Image} from 'react-native';
+import {data} from '../config/firebase';
 import CardContainer from './CardContainer';
 import Categories from './Categories';
 import FeaturedProducts from './FeaturedProducts';
@@ -7,24 +10,24 @@ import First from './First';
 import AppIcon from './widgets/AppIcon';
 
 export default function Body() {
-  LogBox.ignoreAllLogs();
-  const data = [
-    {
-      id: 1,
-      image: require('../assets/images/ayurveda.png'),
-      // text: 'My Orders',
-    },
-    {
-      id: 2,
-      image: require('../assets/images/giloy.png'),
-      // text: 'Track Order',
-    },
-    {
-      id: 3,
-      image: require('../assets/images/honey.png'),
-      // text: 'Best Offers',
-    },
-  ];
+  const [name, setName] = React.useState('');
+  // React.useEffect(() => {
+  //   getData();
+  // }, []);
+  // const getData = async () => {
+  //   try {
+  //     const docRef = doc('Data', 'data');
+  //     const docSnap = await getDoc(docRef);
+  //     if (docSnap.exists()) {
+  //       console.log('Document data:', docSnap.data());
+  //     } else {
+  //       // doc.data() will be undefined in this case
+  //       console.log('No such document!');
+  //     }
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // };
   return (
     <>
       <AppIcon
@@ -35,9 +38,8 @@ export default function Body() {
       <ScrollView>
         <View style={styles.container}>
           <Text style={styles.header}>Hello There,</Text>
-          <Text style={styles.subHeader}>How to serce</Text>
+          <Text style={styles.subHeader}>How to are</Text>
           <First />
-
           <CardContainer />
           <Categories />
           <FeaturedProducts header="Featured Products" />

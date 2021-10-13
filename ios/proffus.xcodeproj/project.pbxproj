@@ -11,6 +11,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		73B77BD62716AF69000EC212 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73B77BD52716AF69000EC212 /* GoogleService-Info.plist */; };
 		73EA9115CF82EB484FFCA391 /* libPods-proffus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2DEA078BE35BE268CA6BC7 /* libPods-proffus.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		FD66ACDDD3DAE65F05F59FF5 /* libPods-proffus-proffusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20163E11DC5A66A78B11D96C /* libPods-proffus-proffusTests.a */; };
@@ -40,6 +41,7 @@
 		20163E11DC5A66A78B11D96C /* libPods-proffus-proffusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-proffus-proffusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		399CEBD85C6920E87246A3E7 /* Pods-proffus-proffusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proffus-proffusTests.debug.xcconfig"; path = "Target Support Files/Pods-proffus-proffusTests/Pods-proffus-proffusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D2DEA078BE35BE268CA6BC7 /* libPods-proffus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-proffus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B77BD52716AF69000EC212 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = proffus/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B813BDA6E8E9E184320152 /* Pods-proffus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proffus.debug.xcconfig"; path = "Target Support Files/Pods-proffus/Pods-proffus.debug.xcconfig"; sourceTree = "<group>"; };
 		C286EFFB9F6C8C6A77E58D9C /* Pods-proffus-proffusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proffus-proffusTests.release.xcconfig"; path = "Target Support Files/Pods-proffus-proffusTests/Pods-proffus-proffusTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				73B77BD52716AF69000EC212 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* proffus */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* proffusTests */,
@@ -145,7 +148,6 @@
 				399CEBD85C6920E87246A3E7 /* Pods-proffus-proffusTests.debug.xcconfig */,
 				C286EFFB9F6C8C6A77E58D9C /* Pods-proffus-proffusTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -245,6 +247,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				73B77BD62716AF69000EC212 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

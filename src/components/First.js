@@ -60,8 +60,8 @@ export default function First() {
           [{nativeEvent: {contentOffset: {x: scrollX}}}],
           {useNativeDriver: true},
         )}>
-        {data.map(card => (
-          <View style={styles.image}>
+        {data.map((card, i) => (
+          <View key={i} style={styles.image}>
             <Image
               source={card.image}
               style={{height: '100%', width: '100%'}}
@@ -72,6 +72,7 @@ export default function First() {
       <View style={styles.footer}>
         {data.map((card, i) => (
           <View
+            key={i}
             style={[
               styles.circle,
               {backgroundColor: currentIndex === i ? 'red' : 'transparent'},

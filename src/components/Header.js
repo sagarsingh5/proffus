@@ -10,7 +10,7 @@ export default function Header() {
           source={require('../assets/images/image1.png')}
           style={styles.appIcon}
         />
-        <AppIcon source={require('../assets/images/menu_24px.png')} size={50} />
+        <AppIcon source={require('../assets/images/menu_24px.png')} size={40} />
       </SafeAreaView>
     </View>
   );
@@ -37,5 +37,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    // backgroundColor: 'red',
+    height: '100%',
   },
 });
